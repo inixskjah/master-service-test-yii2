@@ -49,9 +49,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'POST random-number' => 'random-number/create',
-                'GET random-number' => 'random-number/list',
-                'GET random-number/<id:\d+>' => 'random-number/get',
+                'POST random-number/gen' => 'random-number/gen',
+                'GET random-number/get' => 'random-number/list',
+                'GET random-number/get/<id:\d+>' => 'random-number/get',
             ],
         ]
     ],

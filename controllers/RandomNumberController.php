@@ -22,14 +22,14 @@ class RandomNumberController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'create' => ['post'],
+                    'gen' => ['post'],
                     'list'   => ['get']
                 ],
             ],
         ];
     }
 
-    public function actionCreate() {
+    public function actionGen() {
         $number = new RandomNumber();
         $number->setAttribute('value', rand(0, 10000));
         $number->save();
